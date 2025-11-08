@@ -1,0 +1,19 @@
+# Decision to choose the architectural style of the complaint management system
+
+## Context and Problem Statement
+
+We need a system that must be available 24/7 for online services, has the capacity to scale to support large amounts of users and is extensible to later integrate a chatbot and be deployed in other continents. This is to meet the estimated 10% yearly demand increase in user base on top of the already large pool of existing customers.
+
+## Considered Options
+
+* Service Oriented Architecture 
+* Microservices
+* Layered Architecture 
+## Decision Outcome
+
+Microservices, because each microservice can be independently scaled and there is limited to no dependencies on other microservices. Although Service Oriented Architecture also has this ability, it uses an ESB (Enterprise Service Bus), meaning if it goes down it would lead to a system failure. This is not acceptable as we need to have 24/7 online service availability. Microservices are much better in this regard as it is much more decentralized and has no single point of failure as it does not use an ESB.
+### Consequences
+
+* Good, because the architecture allows the system to scale and meet the needs of the clients
+* Good, system is reliable and decentralized meeting the needs of 24/7 online availability
+* Bad, each microservice manages its own copy of the data which could lead to data inconsistency
