@@ -1,0 +1,19 @@
+# Decision to choose frontend technology for Complaint Management System
+
+## Context and Problem Statement
+
+A frontend technology is needed in order to develop a user interface that satisfies user requirements and usability requirements
+## Considered Options
+
+* JavaScript
+* Vue.js
+* Next.js
+
+## Decision Outcome
+
+I decided to use Next.js as it is a familiar framework and will be more efficient for myself to develop in due to its page routing system and layouts. Furthermore, it comes with tailwindCSS and can be used in typescript
+which is useful when handling data types
+### Consequences
+
+* Good, modular and provides components, layouts and a page routing system
+* Bad, Technically a full stack technology but can be used as a frontend, could potentially add complexity
