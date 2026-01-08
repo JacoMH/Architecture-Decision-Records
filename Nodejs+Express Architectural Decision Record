@@ -1,0 +1,17 @@
+# Decision to choose Technology to host the backend logic for Complaint Management System
+
+## Context and Problem Statement
+
+A reliable technology is needed to work with the next.js frontend for the microservice backend logic
+## Considered Options
+
+* Node.js+express.js
+* Next.js
+
+## Decision Outcome
+
+Node.js + Express.js, because they are apart of the javascript ecosystem and require minimal setup to work together
+### Consequences
+
+* Good, since they are apart of the same ecosystem, its easy frontend backend sharing
+* Bad, could become overwhelming with too many different technologies involved, could potentially be easier only having one
