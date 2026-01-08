@@ -1,0 +1,17 @@
+# Decision to choose what database to use for performance service
+
+## Context and Problem Statement
+
+We need a database that has the capability of handling a large amount of reads and writes 
+
+## Considered Options
+
+* MySQL 
+* PostgreSQL
+* NoSQL
+## Decision Outcome
+
+PostgreSQL, can handle large amounts of reading and writing data.
+### Consequences
+
+* Good, because it suits the tasks that it will be given in a performance service 
