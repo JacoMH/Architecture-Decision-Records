@@ -1,0 +1,17 @@
+# Decision to choose technology to communicate with the databases for the Complaint Management System
+
+## Context and Problem Statement
+
+A reliable technology is needed to communicate and exchange data with databases and servers
+## Considered Options
+
+* direct SQL
+* prisma
+
+## Decision Outcome
+
+prisma, because it uses schemas to then allow you to write about the databases in more readable code
+### Consequences
+
+* Good, provides the ability to create schemas and push them to the database, ensuring that the schema is accurate to your diagram
+* Bad, doesnt natively support materialized view, have to use standard sql instead
