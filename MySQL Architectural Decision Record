@@ -1,0 +1,17 @@
+# Decision to choose the database of the Problem Registration Service
+
+## Context and Problem Statement
+
+We need a database that can handle simple write tasks to be apart of a mock microservice 
+## Considered Options
+
+* PostgreSQL
+* MySQL
+* NoSQL 
+## Decision Outcome
+
+MySQL, because it is a light database suitable for low complexity Inserts
+### Consequences
+
+* Good, because it will be less resource intensive
+* Bad, because if there is a high frequency of writes, it could slow down
