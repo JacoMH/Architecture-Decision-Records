@@ -1,0 +1,16 @@
+# Decision to choose Technology to host the databases for Complaint Management System
+
+## Context and Problem Statement
+
+A reliable technology is needed to host the databases and MQTT server required for the application
+## Considered Options
+
+* Docker
+* Xampp
+
+## Decision Outcome
+
+Docker, because it can run many technologies such as my MQTT server and postgresql that Xampp cannot
+### Consequences
+
+* Good, provides all databases and the MQTT server a containerized environment to run inside
