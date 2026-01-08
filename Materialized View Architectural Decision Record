@@ -1,0 +1,19 @@
+# Decision to choose the table used for the PostgreSQL database
+
+## Context and Problem Statement
+
+We need a table that can provide suitable storage for complaint information and provide fast reads as to make sure its able to be scaled
+
+## Considered Options
+
+* Standard Table
+* Materialized View
+
+## Decision Outcome
+
+Materialized View, as it offloads the calculation workload onto the backend rather than the frontend
+
+### Consequences
+
+* Good, because the calculations are carried out in the backend so api calls are much faster
+* Bad, data isnt always upto date completely as the tables have to refresh periodically
