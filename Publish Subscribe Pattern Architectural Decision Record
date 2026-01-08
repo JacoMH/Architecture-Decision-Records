@@ -1,0 +1,18 @@
+# Decision for the solution of tight coupling of the complaint management system
+
+## Context and Problem Statement
+
+The different microservices share data between eachother and require eachothers data, however, they cannot talk to eachother as that would be tight coupling and defeat one of the purposes of microservices
+## Considered Options
+
+* Publish Subscribe Pattern with Apache Kafka
+* Publish Subscribe Pattern with Eclipse Mosquitto MQTT Server
+* Continue directly communicating with eachother
+## Decision Outcome
+
+Publish Subscribe Pattern with Eclipse Mosquitto MQTT Server, this is because it allows data to be broadcast to many different microservices keeping it loosely coupled, but also
+its much lighter than apache kafka to use.
+### Consequences
+
+* Good, because it allows communication of data between microservice databases while staying loosely coupled
+* Bad,  Introduces a point of failure
