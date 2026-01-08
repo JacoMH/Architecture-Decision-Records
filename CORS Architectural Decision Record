@@ -1,0 +1,18 @@
+# Decision to choose pattern for backend communication
+
+## Context and Problem Statement
+
+During initial development of the proof-of-concept, i came across CORS errors which stopped API calls from the frontend communicating with the backend
+
+## Considered Options
+
+* Installing CORS package 
+* BFF pattern
+
+## Decision Outcome
+
+I decided after initially using the CORS package to switch to the BFF pattern as it stops the exposure to potential data leaks
+### Consequences
+
+* Good, the data in the system is now more secure from potential data leaks as the data communicates through an api middleman instead of directly with the backend
+* Good, no more CORS browser errors when API calls are made
